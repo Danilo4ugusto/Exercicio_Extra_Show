@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class ThreadProcessamento extends Thread {
 
-	private int qtdIngressos;
+	static private int qtdIngressos = 100;;
 	private Semaphore semaforo;
 	private int ingressos;
 	private int IdComprador;
@@ -87,7 +87,7 @@ public class ThreadProcessamento extends Thread {
 
 	private void Exibicao()
 	{
-		qtdIngressos = 100;
+		
 		
 		if (ingressos > qtdIngressos)
 		{
